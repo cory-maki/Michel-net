@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Dr. Michel Alkhalil | Sleep Medicine &amp; Allergy Specialist | Oakland County, MI</title>
+<meta name="description" content="Dr. Michel Alkhalil is a board-certified Sleep Medicine and Allergy &amp; Immunology physician serving Oakland and Macomb Counties. Medical Director of AAIRS Clinic and Troy Sleep Center."/>
+<link rel="canonical" href="https://michelalkhalil.netlify.app/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Dr. Michel Alkhalil | Sleep Medicine &amp; Allergy Specialist | Oakland County, MI"/>
+<meta property="og:description" content="Dr. Michel Alkhalil is a board-certified Sleep Medicine and Allergy &amp; Immunology physician serving Oakland and Macomb Counties."/>
+<meta property="og:image" content="https://michelalkhalil.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://michelalkhalil.netlify.app/"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Michel Alkhalil';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-home'],soc);
+    render(['sml-news-home'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://michelalkhalil.netlify.app/#person",
+      "name": "Michel Alkhalil",
+      "honorificPrefix": "Dr.",
+      "jobTitle": "Sleep Medicine &amp; Allergy/Immunology Physician",
+      "description": "Dr. Michel Alkhalil is a board-certified Sleep Medicine and Allergy &amp; Immunology physician and Medical Director of AAIRS Clinic and Troy Sleep Center in Oakland County, Michigan.",
+      "url": "https://michelalkhalil.netlify.app/",
+      "image": "https://michelalkhalil.netlify.app/images/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Troy",
+        "addressRegion": "MI",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://aairsclinic.com/",
+        "https://www.quora.com/profile/Michel-Alkhalil",
+        "https://www.reddit.com/user/michelalkhalil/",
+        "https://about.me/michelalkhalil",
+        "https://dribbble.com/michelalkhalil",
+        "https://gravatar.com/michelalkhalil",
+        "https://vimeo.com/michelalkhalil",
+        "https://www.f6s.com/michel-alkhalil",
+        "https://www.behance.net/michelalkhalil",
+        "https://github.com/michelalkhalil",
+        "https://www.producthunt.com/@michelalkhalil",
+        "https://venture.angellist.com/v/michel-alkhalil/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://michelalkhalil.netlify.app/#website",
+      "url": "https://michelalkhalil.netlify.app/",
+      "name": "Dr. Michel Alkhalil",
+      "publisher": {"@id": "https://michelalkhalil.netlify.app/#person"}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ══ STICKY NAV ══════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Dr. Michel<span> Alkhalil</span></a>
+  <ul class="nav-links">
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════════════════════════ -->
+<div class="h-hero">
+  <div class="h-inner">
+    <div class="h-photo"><img src="images/hero.jpg" alt="Dr. Michel Alkhalil, Sleep Medicine and Allergy physician in Troy, Michigan"/></div>
+    <div>
+      <h1 class="h-name">Dr. Michel Alkhalil</h1>
+      <p class="h-role">Sleep Medicine &amp; Allergy/Immunology Specialist</p>
+      <p class="h-desc">Dr. Michel Alkhalil is a dual board-certified physician specializing in Sleep Medicine and Allergy &amp; Immunology, serving patients across Oakland and Macomb Counties at the AAIRS Clinic and Troy Sleep Center — an AASM-accredited, multi-specialty practice built around restoring health one night at a time.</p>
+      <div class="h-loc">📍 Troy, Michigan</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT TEASER ═══════════════════════════════════════════════ -->
+<div class="h-about">
+  <div class="ha-inner">
+    <div class="ha-text">
+      <p class="eyebrow">About Dr. Alkhalil</p>
+      <h2 class="sec-title">Two Specialties, One Mission: Better Health for Michigan Families</h2>
+      <p>Dr. Michel Alkhalil brings a rare combination of expertise to his patients in the Detroit metro area. After completing residency training at St. Joseph Mercy Oakland Hospital, he pursued not one but two fellowship programs — one in Pediatric and Adult Sleep Medicine through Drexel University and Hahnemann University Hospital, and a second in Allergy &amp; Immunology at the University of South Florida, Tampa.</p>
+      <p>That dual training is the foundation of everything at the <a href="about.html">AAIRS Clinic and Troy Sleep Center</a>, where Alkhalil serves as Medical Director. The AASM-accredited sleep clinic and allergy and pulmonology practice treats conditions that are often deeply interconnected — allergies that disrupt sleep, respiratory issues that compound fatigue — under one roof, with one coordinating physician.</p>
+      <p>Recognized multiple times on Hour Detroit's <a href="sleep-medicine-sleep-disorders-explained.html">Top Docs list</a>, Dr. Alkhalil has spent his career delivering specialized, evidence-based care to the communities of Oakland and Macomb Counties.</p>
+      <a class="ha-link" href="about.html">Read the full profile →</a>
+    </div>
+    <div><img class="ha-photo" src="images/hero-secondary.jpg" alt="Dr. Alkhalil's clinical team at AAIRS Clinic"/></div>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ═══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-home')">Follow Dr. Michel Alkhalil on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-home"><div id="sml-soc-home" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-home')">Dr. Michel Alkhalil in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-home"><div id="sml-news-home" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<!-- ══ LATEST ARTICLES ════════════════════════════════════════════ -->
+<div class="h-press">
+  <div class="pi">
+    <p class="eyebrow">Patient Education</p>
+    <h2 class="sec-title">Understanding Sleep, Allergies &amp; Respiratory Health</h2>
+    <div class="cards">
+      <a class="card card-article" href="sleep-medicine-sleep-disorders-explained.html">
+        <div class="ct-img"><img src="images/article-1.jpg" alt="Sleep disorders explained by Dr. Michel Alkhalil"/></div>
+        <div class="cb">
+          <div class="cb-pub">Sleep Medicine</div>
+          <div class="cb-hl">Sleep Disorders Explained: From Diagnosis to Treatment</div>
+          <div class="cb-yr">June 2025</div>
+        </div>
+      </a>
+      <a class="card card-article" href="allergy-immunology-michigan-patients.html">
+        <div class="ct-img"><img src="images/article-2.jpg" alt="Allergy and immunology care in Michigan"/></div>
+        <div class="cb">
+          <div class="cb-pub">Allergy &amp; Immunology</div>
+          <div class="cb-hl">Allergy Care in Michigan: What Oakland County Patients Should Know</div>
+          <div class="cb-yr">May 2025</div>
+        </div>
+      </a>
+      <a class="card card-article" href="cpap-sleep-apnea-treatment-options.html">
+        <div class="ct-img"><img src="images/article-3.jpg" alt="CPAP and sleep apnea treatment options"/></div>
+        <div class="cb">
+          <div class="cb-pub">Sleep Apnea</div>
+          <div class="cb-hl">CPAP and Beyond: Modern Options for Treating Sleep Apnea</div>
+          <div class="cb-yr">April 2025</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT TEASER ═════════════════════════════════════════════ -->
+<div class="h-contact">
+  <div class="hc-inner">
+    <div>
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="sec-title">Contact</h2>
+      <form class="cf" onsubmit="return false">
+        <div><label>Your Name</label><input type="text" placeholder="Your name"/></div>
+        <div><label>Email</label><input type="email" placeholder="email@example.com"/></div>
+        <div><label>Message</label><textarea placeholder="Your message..."></textarea></div>
+        <button class="btn-sm" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="hcp">
+      <h3 class="hc-title">Let's connect.</h3>
+      <p>Whether you're experiencing disrupted sleep, chronic allergies, or unexplained fatigue, Dr. Alkhalil and the team at AAIRS Clinic are here to help. Reach out to learn more about care options for Oakland and Macomb County patients.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Dr. Michel Alkhalil. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
